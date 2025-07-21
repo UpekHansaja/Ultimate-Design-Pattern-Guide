@@ -115,7 +115,7 @@ pattern-name/
 | | Memento | ⏳ Planned |
 | | Observer | ⏳ Planned |
 | | State | ⏳ Planned |
-| | Strategy | ⏳ Planned |
+| | Strategy | 🚧 In Progress |
 | | Template Method | ⏳ Planned |
 | | Visitor | ⏳ Planned |
 
