@@ -13,4 +13,7 @@ Avoids subclass explosion and promotes flexible code by using composition instea
 - Decorators and components share a common interface.
 
 # Class Diagram:
-![alt text](image.png)
+![Class Diagram for Decorator Design Pattern](image.png)
+
+# Key Components:
+![Key Components of the Decorator Design Pattern](image-1.png)

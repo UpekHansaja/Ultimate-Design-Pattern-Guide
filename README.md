@@ -103,7 +103,7 @@ pattern-name/
 | **Structural** | Adapter | ⏳ Planned |
 | | Bridge | ⏳ Planned |
 | | Composite | ⏳ Planned |
-| | Decorator | ⏳ Planned |
+| | Decorator | 🚧 In Progress |
 | | Facade | ⏳ Planned |
 | | Flyweight | ⏳ Planned |
 | | Proxy | ⏳ Planned |
