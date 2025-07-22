@@ -10,3 +10,13 @@ Task:
     - The Component interface .
     - One or two Concrete Components.
     - At least two Decorators with price modification logic.
+
+
+***
+
+
+# A:
+
+ 1. The decorator pattern allows behavior to be added to individual objects dynamically at runtime without modifying its structure. This avoids a combinatorial explosion of subclasses for each add-on combination.
+
+ 
