@@ -1,46 +1,47 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class File {
-    private String fileName;
+interface FileSystemComponent {
+    void showDetails(String indent);
+}
 
-    public File(String fileName) {
-        this.fileName = fileName;
+class File implements FileSystemComponent {
+    private String name;
+
+    public File(String name) {
+        this.name = name;
     }
 
-    public void open() {
-        System.out.println("Opening file: " + fileName);
+    @Override
+    public void showDetails(String indent) {
+        System.out.println(indent + "File: " + name);
     }
 }
 
-class Folder {
+class Folder implements FileSystemComponent {
+    private String name;
+    private List<FileSystemComponent> components;
 
-    private String folderName;
-    private List<File> files = new ArrayList<>();
-    private List<Folder> subFolders = new ArrayList<>();
-
-    public Folder(String folderName) {
-        this.folderName = folderName;
+    public Folder(String name) {
+        this.name = name;
+        this.components = new ArrayList<>();
     }
 
-    public void addFile(File file) {
-        files.add(file);
+    public void addComponent(FileSystemComponent component) {
+        components.add(component);
     }
 
-    public void addFolder(Folder folder) {
-        subFolders.add(folder);
+    public void removeComponent(FileSystemComponent component) {
+        components.remove(component);
     }
 
-    public void openAll() {
-        System.out.println("Opening folder: " + folderName);
-        for (File file : files) {
-            file.open();
-        }
-        for (Folder folder : subFolders) {
-            folder.openAll();
+    @Override
+    public void showDetails(String indent){
+        System.out.println(indent + "Folder: " + name);
+        for (FileSystemComponent component : components) {
+            component.showDetails(indent + "  ");
         }
     }
-
 }
 
 public class Composite {
@@ -55,13 +56,13 @@ public class Composite {
         File file2 = new File("file2.txt");
         File file3 = new File("file3.txt");
 
-        rootFolder.addFile(file1);
-        rootFolder.addFolder(subFolder1);
-        subFolder1.addFile(file2);
-        subFolder1.addFolder(subFolder2);
-        subFolder2.addFile(file3);
+        rootFolder.addComponent(file1);
+        rootFolder.addComponent(subFolder1);
+        subFolder1.addComponent(file2);
+        subFolder1.addComponent(subFolder2);
+        subFolder2.addComponent(file3);
 
-        rootFolder.openAll();
+        rootFolder.showDetails("");
 
     }
 

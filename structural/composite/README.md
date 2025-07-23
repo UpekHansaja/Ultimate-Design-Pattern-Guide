@@ -18,3 +18,9 @@ In a computer file system,
     - Calculate total size.
     - Delete all contents.
  - This is a tree structure where each folder can recursively contain more items.
+
+## Issues Without Composite Pattern:
+ - No common interface between File and Folder.
+ - Client needs to know whether it's dealing with a File or a Folder.
+ - If behavior changes, both classes must be changed individually.
+ - Not scalable - new types (e.g., Shortcuts, Archives) increase complexity.
