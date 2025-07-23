@@ -48,21 +48,37 @@ public class Composite {
 
     public static void main(String[] args) {
 
-        Folder rootFolder = new Folder("root");
-        Folder subFolder1 = new Folder("subFolder1");
-        Folder subFolder2 = new Folder("subFolder2");
+        Folder root = new Folder("Root");
 
-        File file1 = new File("file1.txt");
-        File file2 = new File("file2.txt");
-        File file3 = new File("file3.txt");
+        FileSystemComponent photo = new File("photo.jpg");
+        FileSystemComponent photo2 = new File("photo2.jpg");
+        FileSystemComponent document = new File("document.txt");
+        FileSystemComponent document2 = new File("document2.txt");
+        FileSystemComponent song = new File("song.mp3");
+        FileSystemComponent video = new File("video.mp4");
 
-        rootFolder.addComponent(file1);
-        rootFolder.addComponent(subFolder1);
-        subFolder1.addComponent(file2);
-        subFolder1.addComponent(subFolder2);
-        subFolder2.addComponent(file3);
+        Folder documents = new Folder("Documents");
+        documents.addComponent(document);
+        documents.addComponent(document2);
 
-        rootFolder.showDetails("");
+        Folder media = new Folder("Media");
+        Folder photos = new Folder("Photos");
+        Folder videos = new Folder("Videos");
+        Folder music = new Folder("Music");
+
+        media.addComponent(photos);
+        media.addComponent(videos);
+        media.addComponent(music);
+
+        photos.addComponent(photo);
+        photos.addComponent(photo2);
+        videos.addComponent(video);
+        music.addComponent(song);
+
+        root.addComponent(documents);
+        root.addComponent(media);
+
+        root.showDetails("");
 
     }
 
