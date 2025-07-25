@@ -4,9 +4,11 @@ import java.util.List;
 interface DocumentElements {
 
     void render();
+
     void move(int x, int y);
+
     void resize(double factor);
-    
+
 }
 
 class TextBox implements DocumentElements {
@@ -80,21 +82,48 @@ class Page implements DocumentElements {
     }
 }
 
+class Chart implements DocumentElements {
+    private String title;
+
+    public Chart(String title) {
+        this.title = title;
+    }
+
+    @Override
+    public void render() {
+        System.out.println("Rendering Chart: " + title);
+    }
+
+    @Override
+    public void move(int x, int y) {
+        System.out.println("Moving Chart: " + title + " to (" + x + ", " + y + ")");
+    }
+
+    @Override
+    public void resize(double factor) {
+        System.out.println("Resizing Chart: " + title + " by factor " + factor);
+    }
+}
+
 public class EditDocsApp {
 
     public static void main(String[] args) {
-        
+
         DocumentElements textBox1 = new TextBox(10, 20, 1.5);
         DocumentElements textBox2 = new TextBox(30, 40, 2.0);
+
+        DocumentElements chart = new Chart("Sales Data");
+        chart.render();
 
         Page page1 = new Page("Introduction");
         page1.addElement(textBox1);
         page1.addElement(textBox2);
+        page1.addElement(chart);
 
         page1.render();
         page1.move(5, 10);
         page1.resize(1.2);
 
     }
-    
+
 }
