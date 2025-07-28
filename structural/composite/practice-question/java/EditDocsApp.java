@@ -87,6 +87,19 @@ class Chart implements DocumentElements {
 
     public Chart(String title) {
         this.title = title;
+
+        try {
+
+            // Simulating some initialization that might throw an exception
+            if (title == null || title.isEmpty()) {
+                throw new IllegalArgumentException("Chart title cannot be null or empty");
+            }
+            System.out.println("Chart created with title: " + title);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
