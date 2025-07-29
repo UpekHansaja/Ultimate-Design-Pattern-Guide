@@ -12,6 +12,10 @@ Intent:
 
 ![Problems & Key Components](image-1.png)
 
+## Advantages & Disadvantages
+
+![Advantages & Disadvantages of Bridge Design Pattern](image-4.png)
+
 ## Graphical comparison of without and with bridge pattern:
 
 ![Graphical comparison of without and with bridge pattern](image-2.png)
