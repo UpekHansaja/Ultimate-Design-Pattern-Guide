@@ -28,3 +28,6 @@ The Chain of Responsibility (CoR) pattern allows you to pass a request along a c
 
 ```
 
+## Class diagram
+
+![Class diagram of Chain of Responsibility](image.png)
