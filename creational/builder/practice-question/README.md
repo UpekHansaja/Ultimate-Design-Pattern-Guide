@@ -18,3 +18,5 @@ You're currently using a constructor to create Holiday Package Objects, but it h
     4. Draw the class diagram based on your design.
     5. List advantages of using Builder in this context.
 
+## Class Diagram:
+![Class Diagram based on the above scenario](image.png)
