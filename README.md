@@ -98,16 +98,16 @@ pattern-name/
 | **Creational** | Singleton | ⏳ Planned |
 | | Factory Method | ⏳ Planned |
 | | Abstract Factory | ⏳ Planned |
-| | Builder | ⏳ Planned |
+| | Builder | 🚧 In Progress |
 | | Prototype | ⏳ Planned |
 | **Structural** | Adapter | ⏳ Planned |
-| | Bridge | ⏳ Planned |
-| | Composite | ⏳ Planned |
+| | Bridge | 🚧 In Progress |
+| | Composite | 🚧 In Progress |
 | | Decorator | 🚧 In Progress |
 | | Facade | ⏳ Planned |
 | | Flyweight | ⏳ Planned |
 | | Proxy | ⏳ Planned |
-| **Behavioral** | Chain of Responsibility | ⏳ Planned |
+| **Behavioral** | Chain of Responsibility | 🚧 In Progress |
 | | Command | ⏳ Planned |
 | | Interpreter | ⏳ Planned |
 | | Iterator | ⏳ Planned |
