@@ -51,3 +51,16 @@ In Java Language,
 ## Key Components of Interpreter Pattern
 
 ![Key Components of Interpreter Pattern based on real-world-example](image.png)
+
+
+## Advantages
+ - Easy to add new grammar rules.
+ - Great for small domain-specific languages (DSLs).
+ - Recursive structure matches grammer naturally.
+ - Encourages modular class design.
+
+## Disadvantages
+ - Complex grammars become hard to manage.
+ - Many small classes can clutter the codebase.
+ - Inefficient for performance-critical parsing (applications).
+ - Difficult to use for full programming languages.
