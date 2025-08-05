@@ -42,3 +42,12 @@ Minimize memory by sharing as much data as possible with similar objects.
  • Uses a factory to cache manage shared instances.
  • Ideal for systems with high object counts (e.g., text editors, game engines).
  • Reduces memory footprint but increases complexity.
+
+
+## Advantages and Disadvantages
+
+![Advantages & Disadvantages of Flyweight Pattern](image.png)
+
+## Key Components & Benefits
+
+![Key Components & Benefits of Flyweight Pattern](image-1.png)

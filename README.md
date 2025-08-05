@@ -105,11 +105,11 @@ pattern-name/
 | | Composite | 🚧 In Progress |
 | | Decorator | 🚧 In Progress |
 | | Facade | ⏳ Planned |
-| | Flyweight | ⏳ Planned |
+| | Flyweight | 🚧 In Progress |
 | | Proxy | ⏳ Planned |
 | **Behavioral** | Chain of Responsibility | 🚧 In Progress |
 | | Command | ⏳ Planned |
-| | Interpreter | ⏳ Planned |
+| | Interpreter | 🚧 In Progress |
 | | Iterator | ⏳ Planned |
 | | Mediator | ⏳ Planned |
 | | Memento | ⏳ Planned |
