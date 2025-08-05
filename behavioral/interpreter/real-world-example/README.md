@@ -58,3 +58,8 @@ public class Interpreter {
  - Hardcoded logic.
  - Difficult to extend (eg. adding *, /, parantheses).
  - No clear structure for grammar.
+
+
+## Class diagram of example with Interpreter Pattern:
+
+![Class diagram](image.png)

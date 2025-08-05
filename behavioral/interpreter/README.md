@@ -47,3 +47,7 @@ In Java Language,
  - Often used in compilers, query languages, calculators, etc..
  - Easy to extend with new rules.
 
+
+## Key Components of Interpreter Pattern
+
+![Key Components of Interpreter Pattern based on real-world-example](image.png)
