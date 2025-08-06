@@ -74,7 +74,11 @@ public class AirTrafficControlSystem {
         airplane4.sendMessage("Hello, Sri Lankan Airline! Please maintain altitude.", airplane1);
         airplane2.sendMessage("Emirates to Sri Lankan Airline, we are ready for takeoff.", airplane1);
         airplane3.sendMessage("Qatar Airways to Sri Lankan Airline, we are ready for landing.", airplane1);
-        airplane4.sendMessage("Hello Emirates! We are currently on the runway.", airplane2);
+        airplane4.sendMessage("Hello Emirates! We are currently on the runway. Please wait for clearance.", airplane2);
+        airplane1.sendMessage("Sri Lankan Airline to Emirates, you are cleared for takeoff.", airplane2);
+        airplane2.sendMessage("Emirates to Sri Lankan Airline, thank you for the clearance. We are taking off now.", airplane1);
+        airplane3.sendMessage("Qatar Airways to Sri Lankan Airline, we are cleared for landing.", airplane1);
+        airplane1.sendMessage("Sri Lankan Airline to Qatar Airways, you are cleared for landing. Welcome to our airspace.", airplane3);
     }
 
 }
