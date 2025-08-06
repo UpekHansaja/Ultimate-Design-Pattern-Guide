@@ -19,3 +19,17 @@ The Mediator Pattern is a behavioral design pattern that defines an object (Medi
 ## Class Diagram
 
 ![Class Diagram of Mediator Pattern](image-1.png)
+
+
+## Advantages of Mediator Design Pattern
+
+ - Promotes loose coupling between components (colleagues).
+ - Centralized control for communication.
+ - Enhances maintainability and scalability.
+ - Communication logic is isolated in one place (the Mediator).
+
+## Disadvantages of Mediator Design Pattern
+
+ - Mediator can become complex as more colleagues are added.
+ - Might introduce a performance bottleneck in large systems.
+ - Over-centralization may reduce flexibility.
